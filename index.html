@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+    </head>
+    <style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #809bce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.main{
+    background-color: #59b686;
+    width:1200px ;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: black 2px;
+
+}
+h1,p{
+    text-align: center;
+    color: #F8EDE3;
+}
+ 
+
+
+input{
+    border-radius: 5px;
+    width: 85%;
+    height: 50px;
+    margin: 10px;
+    padding: 15px;
+}
+ i {
+    border: 1px black solid;
+padding: 15px;
+margin: 10px;
+    height: 18px;
+    border-radius: 10px;
+   
+}
+.added{
+display: flex;
+flex-direction: row;
+}
+.updatebtn{
+    background-color: #80c783;
+    color: white;
+}
+.removebtn{
+    background-color: #e87a8b;
+    color: white;
+}
+#addbtn{
+    background-color: #b8e0d4;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}:checked{
+    background-color: #719187;
+}
+@media only screen and (max-width: 600px)  {
+input{
+    width: 70%;
+}
+}
+</style>
+    <body>
+        <section class="main">
+            <h1>To-Do List</h1>
+            <p>Add list to make life easy no need to remember</p>
+            <div id="list-here">
+                <div class="items">
+                    <input type="text" name="text" id="item1">
+                    <i class="fa-solid fa-pen-to-square updatebtn"
+                        id="update1"></i><i
+                        class="fa-solid fa-trash removebtn"
+                        id="remove1"></i>
+                </div>
+            </div>
+            <div id="addbtn">ADD</div>
+        </section>
+        <script src="./index.js"></script>
+        <script src="https://kit.fontawesome.com/2bd8905741.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
